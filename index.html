@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.22.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral">
+  <aside class="w-64" aria-label="sidebar">
+    <div class="drawer drawer-mobile">
+      <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col items-center justify-center">
+        <!-- Page content here -->
+        <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+      </div> 
+      <div class="drawer-side">
+        <label for="my-drawer-2" class="drawer-overlay"></label> 
+          <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+            <h1 class="text-white font-bold text-xl">OpenDash</h1>
+              <br />
+              <!-- Sidebar content here -->
+              <li><a>Statistics</a></li>
+              <li><a>Status</a></li>
+              <li><a>Signup</a></li>
+              <li><a>Login</a></li>
+            </ul>
+          </div>
+        </div>
+  </aside>
+</div>
+
+
+</body>
+</html>
